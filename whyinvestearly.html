@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<!---This page is used to explain the importance of investing at a young age--->
+<html>
+	
+	<head>
+		
+		<title>Start Investing Now! </title>
+
+
+		<style>
+			/* Add a black background color to the top navigation */
+            .topnav {
+                background-color: darkblue;
+                overflow: hidden;
+                }
+
+                /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 22px;
+                }
+
+                /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+                }
+
+
+
+			body {
+            background-color: lightgreen;
+            /*opacity: 25%;*/
+            }
+
+            /* What size and font the text will be if in a p tag */
+            p {
+                font-size: 20px;
+                font-family: optima;
+            }
+
+            /* What size and font the text will be if in a h3 tag */
+            h3 {
+                font-family: optima;
+                font-size: 20px;
+            }
+            
+            /* Used for like a header bar, for different sections in the page */
+            h1 {
+                background-color:#ffffff;
+                color: black;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                padding: 10px;
+                text-align: center;
+                font-family: optima;
+                border-radius: 35px;
+                border: 2px solid #000000;
+                opacity: 87%;
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            hr {
+                border-top: 2px solid black;
+                border-radius: 4px;
+            }
+
+            /*CSS for quiz*/
+            .question{
+                font-weight: 600;
+            }
+            .answers {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            /*submit button CSS*/
+            #submit {
+                font-family: sans-serif;
+                font-size: 20px;
+                background-color: rgb(34, 205, 145);
+                color: #fff;
+                border: 0px;
+                border-radius: 3px;
+                width: 30%;
+                padding: 10px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            #submit:hover {
+                background-color: #3a8;
+            }
+
+            /*quiz size*/
+            #quiz {
+                width: 80%;
+                padding: 10px;
+                border: 2px solid rgb(57, 57, 57);
+                margin: 0;
+                background-color: #fff;
+            }
+
+            /*results (0/1 or 1/1)*/
+            #results {
+                width: 30%;
+                height: 20px;
+                padding: 10px;
+                margin: 0;
+                font-size: 20px;
+                border-radius: 3px;
+                color: black;
+                margin-top: 10px;
+            }
+
+            /*Reset button CSS*/
+            #fullReset {
+                font-family: sans-serif;
+                font-size: 20px;
+                background-color: rgb(34, 205, 145);
+                color: #fff;
+                border: 0px;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-top: 10px;
+                width: 30%;
+                padding: 10px;
+            }
+            #fullReset:hover {
+                background-color: #3a8;
+            }
+            /*End of CSS for quiz*/
+
+            /*button that brings you to the top (CSS)*/
+            #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 19;
+            font-size: 22px;
+            border: none;
+            outline: none;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            }
+
+            #myBtn:hover {
+            background-color: rgb(18, 18, 196);
+            }
+		</style>
+
+
+	</head>
+
+
+	<body>
+
+        <!---Top navbar--->
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            
+            <a href="whyinvestearly.html">Why Invest Early?</a>
+        
+            <a href="Q&A.html">Q&A</a>
+        
+            <a href="definitions.html">Definitions</a>
+        
+          </div>
+
+
+        <!--Button that brings you to the top of the page html-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+		<center>
+		
+            <h1>Why Invest At A Young Age?</h1>
+
+            <!-----This is the discription of what the graph represents below---->	
+            <h3>This graph below shows the power of investing early and utilizing compound interest. </h3>
+
+
+            <!---Graph showing the importance of investing as soon as possible (at a young age)---->
+            <img src="Images/investearly.jpg" id="graph">
+
+            <br><br><br><hr><br>
+
+            
+            <h3>Quiz On When To Start Investing</h3>
+            <!--html for quiz-->
+            <div id="quiz"></div>
+            <button id="submit">Results</button>
+            <div id="results"></div>
+            <!--Reset button-->
+            <button id='fullReset'>Reset Quiz</button>
+            <!--End of html for quiz-->
+
+            <br><br><br><br><hr><br>
+            <!--Information part-->
+            <h2><u>Key Ideas About Investing Early</u></h2>
+            
+            <h3>Time allows you to take risks</h3>
+            <p> Investors, who have the time to recover if something were to go wrong, have the 
+                opportunity to make riskier moves. Those who begin to invest late in life are 
+                often inherently more cautious with how they invest their money.</p>
+
+            <h3>Compound interest really makes a difference</h3>
+            <p>Essentially, compound interest is the interest earned on interest. By continuously 
+                reinvesting your earnings, you are exponentially increasing your return on investment.</p>
+
+            <h3>Real life compound interest example</h3>
+            <p>Twenty-five year old Madison invests $2,000 annually over 10 years in her company’s 401(k), with an average growth of 10 percent. When she retires, at the age of 65, her investment would have grown to $556,197.</p>
+            <p>On the other hand consider Cooper, age 34, who invests $2,000 annually over 30 years into his 401(k). At age 65, Cooper who has invested three times as much as Madison, will have $328,988 in his retirement account.</p>
+            <p>In this example, Madison, who began investing early and gave her money time to earn compound interest has <strong>$225,000</strong> more than Cooper to spend during her retirement.</p>
+
+            <h3>You will be a step ahead of everyone else</h3>
+            <p>The early bird gets the worm! The earlier you begin investing, the better your 
+                personal financial situation will be down the line.</p>
+
+            <h3>Your quality of life will improve</h3>
+            <p>Although money isn't everything, it allows you to have freedom. It would be great to have something making money while your sleeping. </p>
+
+
+            <br><br><br><br>
+
+		</center>
+
+
+
+
+
+	</body>
+
+
+    <!--Javascript part of the code for the quiz---->
+	<script type="text/javascript">
+		var myQuestions = [
+        {
+            question: "When Is The Best Time To Start Investing?",
+            answers: {
+            A: 'When your a child',
+            B: 'Before retirement',
+            C: 'When you have money left over',
+            D: 'Now if you have not already',
+            E: 'When you feel like it'
+            },
+            correctAnswer: 'D'},
+        ];
+
+        var quizContainer = document.getElementById('quiz');
+        var resultsContainer = document.getElementById('results');
+        var submitButton = document.getElementById('submit');
+
+        generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+        function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+        function showQuestions(questions, quizContainer){
+            //stores the output and the answers
+            var output = [];
+            var answers;
+
+            //for each question
+            for(var i=0; i<questions.length; i++){
+            
+            answers = [];
+
+            //for each answer
+            for(letter in questions[i].answers){
+
+                // ...add an html radio button
+                answers.push(
+                '<label>'
+                    + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                    + letter + ': '
+                    + questions[i].answers[letter]
+                + '</label>'
+                );
+            }
+
+            // add this question and its answers to the output
+            output.push(
+                '<div class="question">' + questions[i].question + '</div>'
+                + '<div class="answers">' + answers.join('') + '</div>'
+            );
+            }
+
+            // finally combine our output list into one string of html and put it on the page
+            quizContainer.innerHTML = output.join('');
+        }
+
+
+        function showResults(questions, quizContainer, resultsContainer){
+            
+            // gather answer containers from our quiz
+            var answerContainers = quizContainer.querySelectorAll('.answers');
+            
+            // keep track of user's answers
+            var userAnswer = '';
+            var numCorrect = 0;
+            
+            // for each question...
+            for(var i=0; i<questions.length; i++){
+
+            // find selected answer
+            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+            
+            // if answer is correct
+            if(userAnswer===questions[i].correctAnswer){
+                // add to the number of correct answers
+                numCorrect++;
+                
+                // color the answers green
+                answerContainers[i].style.color = 'lightgreen';
+            }
+            // if answer is wrong or blank
+            else{
+                // color the answers red
+                answerContainers[i].style.color = 'red';
+            }
+            }
+
+            // show number of correct answers out of total
+            resultsContainer.innerHTML = numCorrect + '/' + questions.length;
+        }
+
+        // show questions right away
+        showQuestions(questions, quizContainer);
+        
+        // on submit, show results
+        submitButton.onclick = function(){
+            showResults(questions, quizContainer, resultsContainer);
+        }
+
+        }
+
+        //reset button
+        var fullReset = document.getElementById('fullReset');
+
+        fullReset.addEventListener('click', function(e) {
+        location.reload();
+        }, false);
+
+
+
+        //Javascript for button that brings you to the top
+
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+	</script>
+
+
+
+</html>
